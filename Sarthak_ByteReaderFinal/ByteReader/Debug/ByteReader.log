@@ -1,0 +1,5 @@
+﻿  ByteReader.cpp
+c:\users\sarthaks\source\repos\bytereader\bytereader\bytereader.cpp(21): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+c:\users\sarthaks\source\repos\bytereader\bytereader\bytereader.cpp(86): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+c:\users\sarthaks\source\repos\bytereader\bytereader\bytereader.cpp(89): warning C4244: '=': conversion from 'std::streamoff' to 'size_t', possible loss of data
+  ByteReader.vcxproj -> C:\Users\sarthaks\source\repos\ByteReader\Debug\ByteReader.exe

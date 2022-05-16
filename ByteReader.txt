@@ -1,0 +1,39 @@
+
+Simple Byte Reader/Serializer Class
+
+- Write a class which takes Buffer(a char array) and its size as input in constructor
+
+	- provides interfaces to read/show 1/2/4 bytes in little endian or big endian, while updating internal offset of Buffer.
+	  - following interfaces
+		
+		unsigned long readBE(int n) //read big endian, internal offset updated, the value of n is from 1 to 4
+		
+		unsigned long readLE(int n) //read litle endian, internal offset updated
+		
+		unsigned long showBE(int n) //just return big endian, without updating internal offset
+		
+		unsigned long showLE(int n) //just return big endian, without updating internal offset
+		
+		int tell()  // returns the current postion(offset) in internal buffer
+		
+		int total()  // returns the total size of internal buffer
+		
+		int remaining()  // returns the remaining bytes in internal buffer
+		
+		void flush(int n)  // moves the current position ahead by n bytes
+		
+	
+	
+- Use the class to read a wav file header and show following as output: Channel Count, Sampling Frequency, Bits per sample
+	-Read and verify Big Endian Chunk ids (RIFF, fmt, data)
+	
+
+
+Resources
+Ex Wav file: cqfx.a31.wav
+Simple Wav file spec: https://ccrma.stanford.edu/courses/422-winter-2014/projects/WaveFormat/
+Hex Editor to view files: free-hex-editor-neo
+
+Resources shared at:
+\\192.168.4.83\Tabor_Shared_Read\Assignments\ByteReader
+
